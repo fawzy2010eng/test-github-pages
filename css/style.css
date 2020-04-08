@@ -1,0 +1,272 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 3000px
+}
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+    overflow: hidden;
+    padding: 0;
+/*    background-color: green*/
+}
+/*the header*/
+header{
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    height: 48px;
+    z-index: 1;
+}
+header h2{
+    float: left;
+    color: white;
+    margin-bottom: 4px;
+    margin-top: 12px;
+    cursor: pointer
+}
+header .menu{
+    float: right;
+    color: #b3b2b2;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 22px
+    
+}
+header .hiddenmenu{
+    background-color: black;
+    color: gray;
+    float: right;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    right: 0%;
+    display: none
+}
+header .hiddenmenu a{
+    text-decoration: none;
+    color: gray
+}
+
+header .hiddenmenu .far{
+    margin-left: 220px;
+    cursor: pointer
+}
+header .hiddenmenu .collect{
+    position: fixed
+}
+header .hiddenmenu h3{
+    cursor: pointer;
+    padding-bottom: 15px;
+    border-bottom: gray 1px solid;
+    border-bottom-width: 80%
+}
+header .menu:hover,header .far:hover,header .hiddenmenu a:hover{
+    color: white;
+} 
+
+
+/*main */
+.main{
+    background-image: url(../images/banner.jpg);
+    height: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 120px;
+    text-align: center;
+    color: white
+}
+.main .container{
+}
+.main h2{
+    font-size: 72px;
+    text-transform: capitalize;
+    
+}
+.main p{
+    font-size: 32px;
+}
+
+
+/*branches*/
+.branches{
+    background-image: url(../images/bg.jpg);
+    opacity: 70%;
+    text-align: center;
+    height: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 52px
+}
+.branches h2:first-child,.branches p{
+    color: white
+}
+.branches h2:first-child{
+    font-size: 43px
+}
+.branches p{
+    font-size: 25px;
+    margin-top: 43px;
+    margin-bottom: 32px
+}
+.branches figure{
+    background: snow    ;
+    width: 45%;
+    float: left;
+    padding: 52px 12px 32px 12px;
+    color: darkgray;
+    margin: 20px 0 20px 0;
+}
+.branches .first{
+    margin-right: 10%
+}
+.branches figure .fas,.branches figure .fab{
+    font-size: 72px;
+    color: #9c27b0;
+    cursor: pointer;
+    margin-bottom: 22px
+}
+
+
+/*gratnes*/
+
+.greatness{
+    background-image: url(../images/cta01.jpg);
+    text-align: center;
+    height: 20%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding-top: 160px
+}
+.greatness h2{
+    font-size: 46px;    
+}
+.greatness p{
+    font-size: 25px
+}
+
+
+/*leaders*/
+
+.leaders{
+    background-image: url(../images/bg.jpg);
+    opacity: 70%;
+    text-align: center;
+    height: 40%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 52px    
+}
+.leaders .leader{
+    background-color: snow;
+    width: 45%;
+    float: left;
+    margin-bottom: 60px
+    
+}
+.leaders .container div:first-of-type{
+    margin-right: 10%
+}
+.leaders .leader {
+    padding: 22px 30px 32px 30px
+}
+.leaders .leader .col{
+    background-color: dimgray;
+    height: 220px;
+    width: 15px;
+    float: left;
+    margin-top: 40px;
+/*    margin-left: 30px;*/
+    margin-bottom: 40px
+}
+.leaders .leader p{
+    font-size: 32px;
+    margin-right: 15px;
+}
+.leaders .leader img{
+    width: 80px;
+    border-radius: 50%;
+    float: left;
+    position: relative;
+    bottom: 12px;
+    left: -60px;
+}
+.leaders .leader h5{
+    position: relative;
+    right: 60px;
+    top: 30px
+}
+.leaders .leader span{
+    color: red
+}
+
+
+/*footer*/
+.footer{
+    background-color: black;
+    color: beige;
+    padding-top: 70px
+}
+.footer h3{
+    font-size: 42px
+}
+.footer p{
+    font-size: 27px
+}
+.footer .orientation{
+    float: left;
+    font-size: 29px;
+    color: darkgray;
+    margin-right: 27%
+}
+.footer .orientation h4{
+    cursor: pointer;
+    border-bottom: 3px darkgray solid;
+    border-bottom-width: 70%;
+    padding-bottom: 22px
+}
+.footer .orientation h4:hover{
+    color: #9c27b0
+}
+.footer .orientation h4:first-of-type{
+    color: white;
+    border-bottom: none;
+    font-size: 29px
+}
+.footer .social div{
+    width: 24%;
+    height: 50px;
+    margin-bottom: 30px;
+    float: right
+}
+.footer .social div:hover{
+    cursor: pointer;
+    color: #9c27b0
+}
+
+.footer .social h4{
+    font-size: 42px;
+}
+.footer .social .fab{
+    font-size: 32px;
+    float: left;
+    margin: 27px 32px 12px 0;
+}
+.footer .social h2{
+    margin-right: 0;
+    font-size: 32px
+}
