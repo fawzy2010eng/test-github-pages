@@ -3,18 +3,41 @@
 var menubtn = document.getElementById('menubtn');
 var hddnmnu = document.getElementsByClassName('hiddenmenu')[0];
 var closemenu = document.getElementById('closemenu');
-menubtn.addEventListener('click', function () {
-    hddnmnu.style.display = 'block';
-    menubtn.style.display = 'none';
-});
-closemenu.addEventListener('click', function () {
-    hddnmnu.style.display = 'none';
-    menubtn.style.display = 'block';
-});
+
+var showmenu = function(){
+    var pos = -300;
+    var id = setInterval(frame, 2);
+    function frame() {
+        if(pos < 0){
+            pos++; 
+            hddnmnu.style.right = pos + 'px';    
+        }
+                 
+    }
+    menubtn.style.display = 'none'
+}
+
+menubtn.addEventListener('click', showmenu);
+
+var hidemenu = function(callback){
+    var pos = 0;
+    var id = setInterval(frame, 2);
+    function frame() {
+        if(pos > -300){
+            pos--; 
+            hddnmnu.style.right = pos + 'px';    
+        }
+                 
+    }
+    menubtn.style.display = 'block'
+    
+}
+
+closemenu.addEventListener('click', hidemenu);
 
 
 
-//the delay of the main title
+//the delay of the main paragraph
 
 var mainp = document.querySelector('.main').querySelector('.container').getElementsByTagName("P")[0];
 var txt = 'A responsive business oriented template with a video background designed by templated and released under the Creative CommonsLicense';
